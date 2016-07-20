@@ -7,21 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E04826E1D3EF74700423F1A /* Pipeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E04826C1D3EF72E00423F1A /* Pipeline.framework */; };
+		8E0482701D3EF75400423F1A /* Pipeline.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E04826C1D3EF72E00423F1A /* Pipeline.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E0482721D3EF84F00423F1A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0482711D3EF84F00423F1A /* LocationManager.swift */; };
+		8E0482741D3EF93500423F1A /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0482731D3EF93500423F1A /* Geocoder.swift */; };
+		8E0482761D3EFCF200423F1A /* RedditClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0482751D3EFCF200423F1A /* RedditClient.swift */; };
+		8E0482781D3EFD6000423F1A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0482771D3EFD6000423F1A /* HTTPClient.swift */; };
+		8E04827A1D3F016900423F1A /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0482791D3F016900423F1A /* Parsable.swift */; };
+		8E04827C1D3F018500423F1A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04827B1D3F018500423F1A /* JSON.swift */; };
+		8E04827E1D3F037800423F1A /* Subreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04827D1D3F037800423F1A /* Subreddit.swift */; };
+		8E0482801D3F05B400423F1A /* GeoReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04827F1D3F05B400423F1A /* GeoReddit.swift */; };
+		8E0482821D3F0B1100423F1A /* Dedupe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0482811D3F0B1100423F1A /* Dedupe.swift */; };
 		8E9FCA031D3EF11E00578264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FCA021D3EF11E00578264 /* AppDelegate.swift */; };
-		8E9FCA051D3EF11E00578264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FCA041D3EF11E00578264 /* ViewController.swift */; };
+		8E9FCA051D3EF11E00578264 /* SubredditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */; };
 		8E9FCA081D3EF11E00578264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FCA061D3EF11E00578264 /* Main.storyboard */; };
 		8E9FCA0A1D3EF11E00578264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FCA091D3EF11E00578264 /* Assets.xcassets */; };
 		8E9FCA0D1D3EF11E00578264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FCA0B1D3EF11E00578264 /* LaunchScreen.storyboard */; };
+		8E9FCA151D3EF13900578264 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FCA141D3EF13900578264 /* Cartfile */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8E04826F1D3EF74D00423F1A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8E0482701D3EF75400423F1A /* Pipeline.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8E04826C1D3EF72E00423F1A /* Pipeline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pipeline.framework; path = Carthage/Build/iOS/Pipeline.framework; sourceTree = "<group>"; };
+		8E0482711D3EF84F00423F1A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8E0482731D3EF93500423F1A /* Geocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
+		8E0482751D3EFCF200423F1A /* RedditClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClient.swift; sourceTree = "<group>"; };
+		8E0482771D3EFD6000423F1A /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		8E0482791D3F016900423F1A /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		8E04827B1D3F018500423F1A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		8E04827D1D3F037800423F1A /* Subreddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subreddit.swift; sourceTree = "<group>"; };
+		8E04827F1D3F05B400423F1A /* GeoReddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoReddit.swift; sourceTree = "<group>"; };
+		8E0482811D3F0B1100423F1A /* Dedupe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dedupe.swift; sourceTree = "<group>"; };
 		8E9FC9FF1D3EF11E00578264 /* GeoReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9FCA021D3EF11E00578264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E9FCA041D3EF11E00578264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditViewController.swift; sourceTree = "<group>"; };
 		8E9FCA071D3EF11E00578264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E9FCA091D3EF11E00578264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9FCA0C1D3EF11E00578264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9FCA0E1D3EF11E00578264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9FCA141D3EF13900578264 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,16 +65,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E04826E1D3EF74700423F1A /* Pipeline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E04826D1D3EF73100423F1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E04826C1D3EF72E00423F1A /* Pipeline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E9FC9F61D3EF11E00578264 = {
 			isa = PBXGroup;
 			children = (
+				8E9FCA141D3EF13900578264 /* Cartfile */,
 				8E9FCA011D3EF11E00578264 /* GeoReddit */,
+				8E04826D1D3EF73100423F1A /* Frameworks */,
 				8E9FCA001D3EF11E00578264 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +102,16 @@
 			isa = PBXGroup;
 			children = (
 				8E9FCA021D3EF11E00578264 /* AppDelegate.swift */,
-				8E9FCA041D3EF11E00578264 /* ViewController.swift */,
+				8E04827F1D3F05B400423F1A /* GeoReddit.swift */,
+				8E0482711D3EF84F00423F1A /* LocationManager.swift */,
+				8E0482731D3EF93500423F1A /* Geocoder.swift */,
+				8E0482751D3EFCF200423F1A /* RedditClient.swift */,
+				8E0482771D3EFD6000423F1A /* HTTPClient.swift */,
+				8E04827B1D3F018500423F1A /* JSON.swift */,
+				8E04827D1D3F037800423F1A /* Subreddit.swift */,
+				8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */,
+				8E0482811D3F0B1100423F1A /* Dedupe.swift */,
+				8E0482791D3F016900423F1A /* Parsable.swift */,
 				8E9FCA061D3EF11E00578264 /* Main.storyboard */,
 				8E9FCA091D3EF11E00578264 /* Assets.xcassets */,
 				8E9FCA0B1D3EF11E00578264 /* LaunchScreen.storyboard */,
@@ -74,6 +130,7 @@
 				8E9FC9FB1D3EF11E00578264 /* Sources */,
 				8E9FC9FC1D3EF11E00578264 /* Frameworks */,
 				8E9FC9FD1D3EF11E00578264 /* Resources */,
+				8E04826F1D3EF74D00423F1A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -124,6 +181,7 @@
 			files = (
 				8E9FCA0D1D3EF11E00578264 /* LaunchScreen.storyboard in Resources */,
 				8E9FCA0A1D3EF11E00578264 /* Assets.xcassets in Resources */,
+				8E9FCA151D3EF13900578264 /* Cartfile in Resources */,
 				8E9FCA081D3EF11E00578264 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +193,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E9FCA051D3EF11E00578264 /* ViewController.swift in Sources */,
+				8E9FCA051D3EF11E00578264 /* SubredditViewController.swift in Sources */,
+				8E0482741D3EF93500423F1A /* Geocoder.swift in Sources */,
+				8E0482781D3EFD6000423F1A /* HTTPClient.swift in Sources */,
+				8E0482761D3EFCF200423F1A /* RedditClient.swift in Sources */,
+				8E0482821D3F0B1100423F1A /* Dedupe.swift in Sources */,
+				8E04827A1D3F016900423F1A /* Parsable.swift in Sources */,
 				8E9FCA031D3EF11E00578264 /* AppDelegate.swift in Sources */,
+				8E0482721D3EF84F00423F1A /* LocationManager.swift in Sources */,
+				8E04827E1D3F037800423F1A /* Subreddit.swift in Sources */,
+				8E04827C1D3F018500423F1A /* JSON.swift in Sources */,
+				8E0482801D3F05B400423F1A /* GeoReddit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +316,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GeoReddit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrickgoley.GeoReddit;
@@ -260,6 +331,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GeoReddit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrickgoley.GeoReddit;
@@ -286,6 +361,7 @@
 				8E9FCA131D3EF11E00578264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
