@@ -48,7 +48,7 @@ class SubredditViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let post = posts[indexPath.row]
         
-        cell.textLabel?.text = post.author
+        cell.textLabel?.text = post.title
         
         return cell
     }

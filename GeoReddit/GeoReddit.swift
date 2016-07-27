@@ -13,11 +13,7 @@ struct GeoReddit {
     
     static func start(withConsumer consumer: (Subreddit?) -> Void) -> Pipeline {
         
-        return LocationManager()
-            |> Geocoder()
-            |> cityNameFromPlacemark
-            |> RedditClient.getSubredditForName()
-            |> consumer
+        
     }
     
     private init() { }

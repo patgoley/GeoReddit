@@ -27,6 +27,7 @@ struct Subreddit: Parsable {
 
 struct RedditPost: Parsable {
     
+    let title: String
     let author: String
     let created: Int
     let ups: Int
@@ -40,7 +41,12 @@ struct RedditPost: Parsable {
         let created = data["created"] as! Int
         let ups = data["ups"] as! Int
         let thumbnailURL = data["thumbnail"] as! String
+        let title = data["title"] as! String
         
-        return RedditPost(author: author, created: created, ups: ups, thumbnailURL: thumbnailURL)
+        return RedditPost(title: title,
+                          author: author,
+                          created: created,
+                          ups: ups,
+                          thumbnailURL: thumbnailURL)
     }
 }

@@ -18,6 +18,7 @@ struct RedditClient {
             |> deserializeJSONObject
             |> logError("error deserializing")
             |> Subreddit.createWithValues
+            |> ensureMainThread()
     }
     
     private init() { }
