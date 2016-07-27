@@ -19,6 +19,7 @@
 		8E0482801D3F05B400423F1A /* GeoReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04827F1D3F05B400423F1A /* GeoReddit.swift */; };
 		8E0482821D3F0B1100423F1A /* Dedupe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0482811D3F0B1100423F1A /* Dedupe.swift */; };
 		8E40C8411D46F3BD00F5B6AB /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40C8401D46F3BD00F5B6AB /* Threading.swift */; };
+		8E85B9701D48560100C41FC7 /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85B96F1D48560100C41FC7 /* CheatSheet.swift */; };
 		8E9FCA031D3EF11E00578264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FCA021D3EF11E00578264 /* AppDelegate.swift */; };
 		8E9FCA051D3EF11E00578264 /* SubredditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */; };
 		8E9FCA081D3EF11E00578264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FCA061D3EF11E00578264 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		8E04827F1D3F05B400423F1A /* GeoReddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoReddit.swift; sourceTree = "<group>"; };
 		8E0482811D3F0B1100423F1A /* Dedupe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dedupe.swift; sourceTree = "<group>"; };
 		8E40C8401D46F3BD00F5B6AB /* Threading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
+		8E85B96F1D48560100C41FC7 /* CheatSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheatSheet.swift; sourceTree = "<group>"; };
 		8E9FC9FF1D3EF11E00578264 /* GeoReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9FCA021D3EF11E00578264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				8E9FCA091D3EF11E00578264 /* Assets.xcassets */,
 				8E9FCA0B1D3EF11E00578264 /* LaunchScreen.storyboard */,
 				8E9FCA0E1D3EF11E00578264 /* Info.plist */,
+				8E85B96F1D48560100C41FC7 /* CheatSheet.swift */,
 			);
 			path = GeoReddit;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				8E04827E1D3F037800423F1A /* Subreddit.swift in Sources */,
 				8E04827C1D3F018500423F1A /* JSON.swift in Sources */,
 				8E0482801D3F05B400423F1A /* GeoReddit.swift in Sources */,
+				8E85B9701D48560100C41FC7 /* CheatSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

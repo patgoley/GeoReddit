@@ -16,12 +16,9 @@ struct GeoReddit {
         return LocationManager()
             |> Geocoder()
             |> cityNameFromPlacemark
-            |> dedupe()
             |> RedditClient.getSubredditForName()
             |> consumer
     }
-    
-    private static var pipeline: Pipeline!
     
     private init() { }
 }
