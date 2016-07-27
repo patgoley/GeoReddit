@@ -10,9 +10,9 @@ import Foundation
 import Pipeline
 
 
-func deserializeJSONObject(data: NSData) -> [String: AnyObject]? {
+func deserializeJSONObject(data: NSData) throws -> [String: AnyObject] {
     
-    let json = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
+    let json = try NSJSONSerialization.JSONObjectWithData(data, options: [])
     
     if let object = json as? [String: AnyObject] {
         
@@ -20,6 +20,11 @@ func deserializeJSONObject(data: NSData) -> [String: AnyObject]? {
         
     } else {
         
-        return nil
+        throw JSONError.CastError
     }
+}
+
+enum JSONError: ErrorType {
+    
+    case CastError
 }

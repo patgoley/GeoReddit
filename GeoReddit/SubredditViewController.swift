@@ -10,9 +10,7 @@ import UIKit
 import Pipeline
 
 
-class SubredditViewController: UIViewController, ConsumerType, UITableViewDelegate, UITableViewDataSource {
-    
-    typealias InputType = Subreddit
+class SubredditViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     
@@ -26,17 +24,17 @@ class SubredditViewController: UIViewController, ConsumerType, UITableViewDelega
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "post")
         
-        pipeline = GeoReddit.start(withConsumer: self)
+        pipeline = GeoReddit.start() { [weak self] subreddit in
+            
+            self?.reloadData(subreddit)
+        }
     }
     
-    func consume(subreddit: Subreddit) {
+    func reloadData(subreddit: Subreddit?) {
         
-        dispatch_async(dispatch_get_main_queue()) { [weak self] in
-            
-            self?.posts = subreddit.posts
-            
-            self?.tableView.reloadData()
-        }
+        self.posts = subreddit?.posts ?? []
+        
+        self.tableView.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

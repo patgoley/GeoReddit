@@ -11,14 +11,13 @@ import Pipeline
 
 struct GeoReddit {
     
-    static func start<C: ConsumerType where C.InputType == Subreddit>(withConsumer consumer: C) -> Pipeline {
+    static func start(withConsumer consumer: (Subreddit?) -> Void) -> Pipeline {
         
         return LocationManager()
             |> Geocoder()
             |> cityNameFromPlacemark
             |> dedupe()
             |> RedditClient.getSubredditForName()
-            |> guardUnwrap()
             |> consumer
     }
     

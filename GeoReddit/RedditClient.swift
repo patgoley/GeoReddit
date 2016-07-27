@@ -16,7 +16,9 @@ struct RedditClient {
         return requestForSubreddit
             |> HTTPClient()
             |> deserializeJSONObject
-            |> optionalMap(Subreddit.createWithValues)
+            |> logError("error deserializing")
+            |> Subreddit.createWithValues
+            |> ensureMainThread()
     }
     
     private init() { }

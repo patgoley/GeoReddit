@@ -18,6 +18,7 @@
 		8E04827E1D3F037800423F1A /* Subreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04827D1D3F037800423F1A /* Subreddit.swift */; };
 		8E0482801D3F05B400423F1A /* GeoReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04827F1D3F05B400423F1A /* GeoReddit.swift */; };
 		8E0482821D3F0B1100423F1A /* Dedupe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0482811D3F0B1100423F1A /* Dedupe.swift */; };
+		8E40C8411D46F3BD00F5B6AB /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40C8401D46F3BD00F5B6AB /* Threading.swift */; };
 		8E9FCA031D3EF11E00578264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FCA021D3EF11E00578264 /* AppDelegate.swift */; };
 		8E9FCA051D3EF11E00578264 /* SubredditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */; };
 		8E9FCA081D3EF11E00578264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FCA061D3EF11E00578264 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		8E04827D1D3F037800423F1A /* Subreddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subreddit.swift; sourceTree = "<group>"; };
 		8E04827F1D3F05B400423F1A /* GeoReddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoReddit.swift; sourceTree = "<group>"; };
 		8E0482811D3F0B1100423F1A /* Dedupe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dedupe.swift; sourceTree = "<group>"; };
+		8E40C8401D46F3BD00F5B6AB /* Threading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
 		8E9FC9FF1D3EF11E00578264 /* GeoReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9FCA021D3EF11E00578264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				8E04827B1D3F018500423F1A /* JSON.swift */,
 				8E04827D1D3F037800423F1A /* Subreddit.swift */,
 				8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */,
+				8E40C8401D46F3BD00F5B6AB /* Threading.swift */,
 				8E0482811D3F0B1100423F1A /* Dedupe.swift */,
 				8E0482791D3F016900423F1A /* Parsable.swift */,
 				8E9FCA061D3EF11E00578264 /* Main.storyboard */,
@@ -197,6 +200,7 @@
 				8E0482741D3EF93500423F1A /* Geocoder.swift in Sources */,
 				8E0482781D3EFD6000423F1A /* HTTPClient.swift in Sources */,
 				8E0482761D3EFCF200423F1A /* RedditClient.swift in Sources */,
+				8E40C8411D46F3BD00F5B6AB /* Threading.swift in Sources */,
 				8E0482821D3F0B1100423F1A /* Dedupe.swift in Sources */,
 				8E04827A1D3F016900423F1A /* Parsable.swift in Sources */,
 				8E9FCA031D3EF11E00578264 /* AppDelegate.swift in Sources */,
