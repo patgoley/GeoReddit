@@ -8,12 +8,18 @@
 
 import Foundation
 import Pipeline
+import CoreLocation
 
 struct GeoReddit {
     
     static func start(withConsumer consumer: (Subreddit?) -> Void) -> Pipeline {
         
-        
+        return LocationManager()
+            |> Geocoder()
+            |> cityNameFromPlacemark
+            |> dedupe()
+            |> RedditClient.getSubredditForName()
+            |> consumer
     }
     
     private init() { }

@@ -106,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				8E9FCA021D3EF11E00578264 /* AppDelegate.swift */,
+				8E04827F1D3F05B400423F1A /* GeoReddit.swift */,
 				8E0482711D3EF84F00423F1A /* LocationManager.swift */,
 				8E0482731D3EF93500423F1A /* Geocoder.swift */,
 				8E0482751D3EFCF200423F1A /* RedditClient.swift */,
@@ -113,7 +114,6 @@
 				8E04827B1D3F018500423F1A /* JSON.swift */,
 				8E04827D1D3F037800423F1A /* Subreddit.swift */,
 				8E9FCA041D3EF11E00578264 /* SubredditViewController.swift */,
-				8E04827F1D3F05B400423F1A /* GeoReddit.swift */,
 				8E40C8401D46F3BD00F5B6AB /* Threading.swift */,
 				8E0482811D3F0B1100423F1A /* Dedupe.swift */,
 				8E0482791D3F016900423F1A /* Parsable.swift */,

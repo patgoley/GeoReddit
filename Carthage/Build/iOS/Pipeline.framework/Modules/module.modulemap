@@ -1,0 +1,10 @@
+framework module Pipeline {
+  umbrella header "Pipeline.h"
+
+  export *
+  module * { export * }
+}
+
+module Pipeline.Swift {
+    header "Pipeline-Swift.h"
+}

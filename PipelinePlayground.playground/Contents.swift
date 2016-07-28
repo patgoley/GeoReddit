@@ -23,7 +23,7 @@ func toString(int: Int) -> String {
 }
 
 
-let addFiveString = compose(first: addFive, second: toString)
+let addFiveString = compose(addFive, second: toString)
 
 addFiveString(3)
 
